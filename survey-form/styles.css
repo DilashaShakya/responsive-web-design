@@ -1,0 +1,137 @@
+body{
+  background-color: #000;
+  font-family: Inter;
+  margin:0;
+  padding: 2rem;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  min-height:100vh;
+}
+.corner-shape {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #000;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Positioning */
+.top-left {
+  top: 30px;
+  left: -20px;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: -20px;
+}
+
+#survey-form p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 2rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+
+
+
+
+.form-container{
+  background: linear-gradient(135deg, #fdf3e7, #f5e4d0);
+
+  border-radius: 20px;
+  padding: 3rem;
+  max-width: 800px;
+  width:100%;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  position: relative;
+
+}
+
+.header{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.header p{
+  margin-top: -0.5rem;
+}
+
+#description {
+  font-size: 1rem;
+  color: #333;
+}
+
+#survey-form {
+  font-size: 1rem;
+}
+
+#survey-form input[type="text"],
+#survey-form input[type="email"],
+#survey-form input[type="number"],
+#survey-form select,
+#survey-form textarea {
+  border:none;
+  border-bottom: 2px solid #888;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  font-size:1rem;
+  color:#111;
+  width:100%;
+  background:transparent;
+
+
+}
+
+#survey-form input::placeholder,
+#survey-form textarea::placeholder,
+#survey-form select {
+  color: #999;
+}
+
+#survey-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+#survey-form input[type="radio"],
+#survey-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+#submit {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+#submit:hover{
+  background-color: #333;
+  
+}
+
+#survey-form input:focus,
+#survey-form select:focus,
+#survey-form textarea:focus {
+  outline: none;
+  border-bottom: 2px solid brown; 
+  transition: border-color 0.3s ease;
+}
+
+#survey-form label {
+  color: #111; /* warm orange-brown */
+  font-weight: 800;
+}
