@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="form-container">
+    <div class="corner-shape top-left"></div>
+  <div class="corner-shape bottom-right"></div>
+    <div class="header">
+      <h1 id="title">Learning Process Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the learning experience.</p>
+    </div>
+    <hr>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label><br />
+
+      <label id="email-label" for="email">Email:
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </label><br />
+
+      <label id="number-label" for="number">Age:
+        <input type="number" id="number" min="10" max="99" placeholder="Enter your age" required />
+      </label><br />
+
+      <label for="dropdown">What is your favorite language?
+        <select id="dropdown">
+          <option value="js">JavaScript</option>
+          <option value="py">Python</option>
+          <option value="cpp">C++</option>
+        </select>
+      </label><br />
+
+      <p>How often do you code?</p>
+      <label><input type="radio" name="coding-frequency" value="daily" /> Daily</label><br />
+      <label><input type="radio" name="coding-frequency" value="weekly" /> Weekly</label><br />
+      <label><input type="radio" name="coding-frequency" value="monthly" /> Monthly</label><br />
+
+      <p>Which tools have you used?</p>
+      <label><input type="checkbox" value="vscode" /> VS Code</label><br />
+      <label><input type="checkbox" value="replit" /> Replit</label><br />
+      <label><input type="checkbox" value="intellij" /> IntelliJ</label><br />
+      <label><input type="checkbox" value="eclipse" /> Eclipse</label><br />
+
+      <label for="comments">Tips for new learners:</label>
+      <textarea id="comments" rows="4" cols="40" placeholder="Leave your thoughts here..."></textarea><br />
+
+      <button type="submit" id="submit">Submit</button>
+      
+    </form>
+  </div>
+</body>
+</html>
